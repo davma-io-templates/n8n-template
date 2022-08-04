@@ -1,8 +1,10 @@
 # davma.io n8n
 
-![n8n](https://luna1.co/dea504.png)
+<img src="https://docs.n8n.io/_images/workflows/workflows/Execute_workflow.gif" alt="drawing" width="600"/>
 
-## n8n - Free and open self hostable workflow automation tool
+n8n - Free and open self hostable workflow automation tool  
+
+[![Update application to Napptive Playground](https://github.com/davma-io-templates/n8n-template/actions/workflows/napptive-push.yml/badge.svg)](https://github.com/davma-io-templates/n8n-template/actions/workflows/napptive-push.yml)
 
 > This application is for development only, it is strongly recommended not to use it in production environments. It is not deployed with data persistence. For more info or help [contact](mailto:contact@davma.io)
 

@@ -2,6 +2,8 @@
 
 n8n - Free and open self hostable workflow automation tool.
 
+[![Update application to Napptive Playground](https://github.com/davma-io-templates/n8n-template/actions/workflows/napptive-push.yml/badge.svg)](https://github.com/davma-io-templates/n8n-template/actions/workflows/napptive-push.yml)
+
 ## Requirements
 
 Need one of the following requirements to get started
