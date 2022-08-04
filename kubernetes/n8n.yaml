@@ -1,0 +1,57 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: n8n-instance-deployment
+  labels:
+    app: n8n-instance
+    project: n8n-instance-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: n8n-instance
+  template:
+    metadata:
+      labels:
+        app: n8n-instance
+    spec:
+      containers:
+      - name: n8n-instance
+        image: n8nio/n8n
+        ports:
+        - containerPort: 5678
+        env:
+        - name: n8n_DB
+          value: wiki
+        - name: n8n_PASSWORD
+          value: wikijsrocks
+        - name: n8n_USER
+          value: wikijs
+        resources:
+          requests:
+            cpu: 200m
+            memory: 512Mi
+          limits:
+            cpu: 200m
+            memory: 512Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: n8n-instance
+    project: n8n-instance-system
+  name: n8n-instance
+  namespace: default
+spec:
+  ports:
+  - port: 5678
+    protocol: TCP
+    targetPort: 5678
+  selector:
+    app: n8n-instance
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
