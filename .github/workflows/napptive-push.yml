@@ -1,16 +1,18 @@
-name: Update application to Napptive Playground
-on: [push]
-jobs:
-  deploy:
-    name: Upload new version to the catalog
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: napptive-actions/catalog-push-action@v3.0.1
-        env:
-          PLAYGROUND_PAT: ${{ secrets.PLAYGROUND_PAT }}
-        with:
-          applicationPath: ./napptive-component/
-          namespace: "davma-io"
-          applicationName: "n8n"
-          tag: "latest"
+# This repository is deprecated. You can find the latest versions for napptive playground in the following link: https://github.com/davma-io-templates/napptive-template
+
+# name: Update application to Napptive Playground
+# on: [push]
+# jobs:
+#   deploy:
+#     name: Upload new version to the catalog
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: napptive-actions/catalog-push-action@v3.0.1
+#         env:
+#           PLAYGROUND_PAT: ${{ secrets.PLAYGROUND_PAT }}
+#         with:
+#           applicationPath: ./napptive-component/
+#           namespace: "davma-io"
+#           applicationName: "n8n"
+#           tag: "latest"
