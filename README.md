@@ -1,5 +1,7 @@
 # n8n
 
+__This repository is deprecated. You can find the latest versions for napptive playground in the following link: [https://github.com/davma-io-templates/napptive-template](https://github.com/davma-io-templates/napptive-template)__
+
 n8n - Free and open self hostable workflow automation tool.
 
 [![Update application to Napptive Playground](https://github.com/davma-io-templates/n8n-template/actions/workflows/napptive-push.yml/badge.svg)](https://github.com/davma-io-templates/n8n-template/actions/workflows/napptive-push.yml)
